@@ -2,6 +2,11 @@
 padding: 0;}
 
 footer {
+    position: absolute;
     width: 100%;
-    margin-bottom: 0%;
+    bottom: 0;
+}
+
+p {
+    margin-top: 6%;
 }
