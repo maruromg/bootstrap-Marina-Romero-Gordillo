@@ -1,0 +1,40 @@
+.navbar-brand {
+  font-family: Babylonica;
+  font-size: 50px;
+}
+
+.container_1 {
+  position: relative;
+  margin-top: 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.row {
+  position: relative;
+  width: auto;
+}
+
+.wrapper {
+  width: auto;
+  height: 100%;
+}
+
+main p {
+  padding-left: 5%;
+  padding-top: 3%;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+body {
+  display: block;
+  bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
