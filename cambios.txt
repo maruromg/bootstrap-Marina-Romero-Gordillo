@@ -1,0 +1,4 @@
+
+Se agregó una html de mixin.
+Se agregó una html de extend.
+Se agregaron keywords y descripcion a la pagina de bottoms.
