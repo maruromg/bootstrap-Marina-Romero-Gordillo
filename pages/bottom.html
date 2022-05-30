@@ -4,34 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Babylonica&family=Inter:wght@300&family=Playfair+Display&family=Roboto:wght@300&family=Satisfy&display=swap" rel="stylesheet">
     <meta name="description" content="Venta de ropa de alta calidad. Nos gusta dar el mejor servicio para que te sientas comoda">
     <meta name="keywords" content="jean, pantalon, pollera, short">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>BOTTOMS</title>
 </head>
-<body>
-    <header class="header">
-        <h1>MIXINS</h1>
-    </header>
-    <main>
-        <section class="pantalon">
-            <h2>Pantalon</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, consectetur qui doloremque veritatis sapiente voluptatibus
-            alias iusto quis, vel, sunt facere cum praesentium minus porro. Amet aliquid expedita quas officiis.
-            </p>
-        </section>
-        <section class="pollera">
-            <h2>Pollera</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, consectetur qui doloremque veritatis sapiente voluptatibus
-            alias iusto quis, vel, sunt facere cum praesentium minus porro. Amet aliquid expedita quas officiis.
-            </p>
-        </section>
-        <section class="short">
-            <h2>Short</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, consectetur qui doloremque veritatis sapiente voluptatibus
-            alias iusto quis, vel, sunt facere cum praesentium minus porro. Amet aliquid expedita quas officiis.
-            </p>
-        </section>
-    </main>
+<body class="bg-black">
+    <div class="wrapper">
+        <header class="container">
+            <nav class="navbar navbar-light bg-black fixed-top">
+                <div class="container-fluid">
+                    <a class="animate__animated animate__bounce navbar-brand text-light" href="../index.html">Palette</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon bg-light"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PALETTE</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about_us.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="/pages/tops.html">TOPS</a></li>
+                                    <li><a class="dropdown-item" href="/pages/bottom.html">BOTTOMS</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="/pages/contact.html">CONTACT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="container-1 mx-3">
+            <div class="row">
+                <div class="col-1 col-xs-1"></div>
+                <div class="col-3 col-xs-3">
+                    <img src="../media/palette9.JPG" alt="jean">
+                </div>
+                <div class="col-1 col-xs-1"></div>
+                <div class="col-3 col-xs-3">
+                    <img src="../media/palette10.JPG" alt="short verde">
+                </div>
+
+            </div>
+        </main>
+        <footer class="row w-100">
+            <div class="col-4 col-xs-4 bg-black pt-5">
+                <p class="text-light px-3">
+                    Office:
+                    <br>
+                    <br>
+                    Av. Libertador 1234
+                    <br>
+                    Capital Federal, Argentina
+                    <br>
+                    Tel: 4383-4444
+                </p>
+            </div>
+            <div class="col-4 col-xs-4 bg-black pt-5">
+                <p class="text-light px-3">
+                    Shipping:
+                    <br>
+                    <br>
+                    Montevideo, Uruguay
+                    <br>
+                    Santiago de Chile, Chile
+                    <br>
+                    Sao Paulo, Brasil
+                </p>
+            </div>
+            <div class="col-4 col-xs-4 bg-black pt-5">
+                <p class="text-light px-3">
+                    Connect:
+                    <br>
+                    <ul class="px-3 list-unstyled">
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a href="web.whatsapp.com">Whatsapp</a></li>
+                    </ul>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

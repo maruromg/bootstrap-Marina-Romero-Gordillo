@@ -30,60 +30,32 @@ body {
   display: block;
   bottom: 0; }
 
-.textos, .textos .textonegro, .textos .textorojo, .textos .textovioleta {
-  background-color: #ffff13;
-  display: inline-block;
-  color: #333;
-  border: 1px solid #ffffff; }
-  .textos .textonegro {
-    border: 5px #000000 solid;
-    color: #000000;
-    background-color: antiquewhite; }
-  .textos .textorojo {
-    border: 5px red solid;
-    color: red;
-    background-color: antiquewhite; }
-  .textos .textovioleta {
-    border: 5px blueviolet solid;
-    color: blueviolet;
-    background-color: antiquewhite; }
-
-body {
-  background-color: #0000ff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-header {
-  text-align: center;
-  padding-top: 2px;
-  color: aqua;
-  height: 50px; }
-
-.pantalon {
-  background-color: #000000;
-  border-radius: 5px;
-  padding: 1rem;
-  margin: 1rem; }
-  .pantalon h2 {
-    color: #0000ff; }
-  .pantalon p {
-    color: #ffffff; }
-
-.pollera {
-  background-color: #ff0000;
-  border-radius: 5px;
-  padding: 1rem;
-  margin: 1rem; }
-  .pollera h2 {
-    color: #0000ff; }
-  .pollera p {
-    color: #ffffff; }
-
-.short {
-  background-color: #8a2be2;
-  border-radius: 5px;
-  padding: 1rem;
-  margin: 1rem; }
-  .short h2 {
-    color: #0000ff; }
-  .short p {
-    color: #ffffff; }
+@media only screen and (min-width: 576px) {
+  body {
+    background-color: #000000;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+    
+@media only screen and (min-width: 768px) {
+  body {
+      background-color: #000000;
+  }
+  .navbar-brand {
+    font-family: Babylonica;
+  }
+}
+    
+@media only screen and (min-width: 900px) {
+  body {
+      background-color: #000000;
+  }
+.navbar-brand {
+    font-family: Babylonica;
+    font-size: 50px;
+  }
+}  

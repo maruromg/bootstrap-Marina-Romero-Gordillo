@@ -1,37 +1,10 @@
-$bgtextonegro:#000000;
-$bgtextorojo:#ff0000;
-$bgtextovioleta: #8a2be2;
-$azul: #0000ff;
-$textos: #ffffff;
-
-@mixin textos ($bgtextos){
-    background-color: $bgtextos;
-    border-radius: 5px;
-    padding: 1rem;
-    margin: 1rem;
-    h2{
-        color: $azul;
+@include mobile{
+    body {
+        background-color: #000000;
     }
-    p{
-        color: $textos;
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
-}
-body{
-    background-color: $azul;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-header{
-    text-align: center;
-    padding-top: 2px;
-    color:aqua;
-    height: 50px;
-}
-.pantalon{
-    @include textos ($bgtextonegro)
-}
-.pollera{
-    @include textos ($bgtextorojo)
-}
-.short{
-    @include textos ($bgtextovioleta)
 }
