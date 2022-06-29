@@ -1,5 +1,6 @@
 const inputEmail = document.querySelector ("#inputEmail")
 const inputConsulta = document.querySelector ("#inputConsulta")
+const btn = document.querySelector ("#btn")
 
 let datosDeInput = ""
 
@@ -15,15 +16,17 @@ const Captura = ()=> {
 
 Captura()
 
-const Impedir = ()=> {
-    const labels = document.getElementById("Form").elements;
-    for(const i=0, label; label = labels[i++];) {
-            if (label.type === text && label.value === "")
-                document.addEventListener("submit", (e)=> {
-                    e.preventDefault()
-                }
-                alert("Al menos un campo del formulario esta vacio");
-    }
-}
+btn.addEventListener("click", (e) => {
+    
+    let isActive = false
 
-Impedir()
+    if(isActive) {
+        btn.classList.add("demo-one")
+        isActive = false
+    }
+    else {
+        btn.classList.remove("demo-one")
+        btn.classList.add("demo-two")
+        isActive = true
+    }
+})
