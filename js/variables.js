@@ -1,32 +1,31 @@
-const inputEmail = document.querySelector ("#inputEmail")
-const inputConsulta = document.querySelector ("#inputConsulta")
-const btn = document.querySelector ("#btn")
+const inputNombre = document.querySelector("#nombre") 
+const inputApellido = document.querySelector("#apellido") 
+const inputTelefono = document.querySelector("#inputtelefono") 
+const inputEmail = document.querySelector( "#inputEmail") 
+const inputAddress = document .querySelector("#inputAddress")
+const btnSubmit = document.querySelector("#submit") 
 
 let datosDeInput = ""
 
-const Captura = ()=> {
-    for (let campo of campos) {
-        if (campo.type != "submit") {
-            campo.addEventListener("input", ()=>{
-                console.log(inputConsulta.value)
-            })
-        }
+function guardarDatosDeUsr() {
+    const datosDeUsr = {nombre: inputNombre.value, 
+                        apellido: inputApellido.value,
+                        telefono: inputTelefono.value, 
+                        email: inputEmail.value, 
+                        address: inputAddress.value,
+    }
+    let str = JSON.stringify(datosDeUsr) 
+    localStorage.setItem("datosDeUsr", str)
+} 
+
+function recuperoDatosDeUsr() {
+    if (localStorage.getItem("datosDeUsr")) {
+        const datosDeUsr = JSON.parse(localStorage.getItem("datosDeUsr"))
+            inputNombre.value = datosDeUsr.nombre
+            inputApellido.value = datosDeUsr.apellido
+            inputTelefono.value = datosDeUsr.telefono
+            inputEmail.value = datosDeUsr.email
+            inputAddress.value = datosDeUsr.address
     }
 }
-
-Captura()
-
-btn.addEventListener("click", (e) => {
-    
-    let isActive = false
-
-    if(isActive) {
-        btn.classList.add("demo-one")
-        isActive = false
-    }
-    else {
-        btn.classList.remove("demo-one")
-        btn.classList.add("demo-two")
-        isActive = true
-    }
-})
+recuperoDatosDeUsr()

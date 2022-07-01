@@ -50,20 +50,44 @@
         </nav>
     </header>
     <main class="container-3 mt-5">
-        <form id="Form">
-            <div class="form-group pt-5">
-                <label for="exampleInputEmail1" class="text-light" id="inputEmail">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu email con nadie.</small>
-            </div>
-            <br>
-            <div class="form-group">
-                <label for="exampleInputPassword1" class="text-light" id="inputConsulta">Consulta</label>
-                <input type="box" class="form-control" id="exampleInputPassword1" placeholder="Consulta">
-            </div>
-            <br>
-            <button type="submit" class="btn btn-primary" id="btn">Submit</button>
-        </form>
+        <section class="form">
+            <form class="row g-3">
+                <div class="row-mb-5">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input type="nombre" class="form-control" id="nombre">
+                </div>
+                <div class="row-mb-5">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="pellido" class="form-control" id="apellido">
+                </div>
+                <div class="row-mb-4">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="row-mb-4">
+                    <label for="inputtelefono" class="form-label">Teléfono</label>
+                    <input type="telefono" class="form-control" id="inputtelefono">
+                </div>
+                <div class="row-mb-5">
+                    <label for="inputAddress" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <div class="ciudad">
+                    <label for="Ciudad">Ciudad: </label>
+                    <select name="Ciudad" id="ciudad">
+                        <option value="none">Selec. Ciudad</option>
+                        <option value="arg">Buenos Aires</option>
+                        <option value="cba">Córdoba</option>
+                        <option value="sfe">Santa Fe</option>
+                    </select>
+                </div>
+                <section class="boton">
+                    <div class="col-12">
+                        <button type="submit" class="boton btn btn-primary"><a href="">PEDIR</button></a>
+                    </div>
+                </section>
+            </form>
+        </section>
     </main>
     <footer class="row w-100">
         <div class="col-4 col-xs-4 bg-black pt-5">
